@@ -69,7 +69,7 @@
     "lighthouse": "^2.2.1",
     "listr": "^0.12.0",
     "looks-same": "^3.2.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "osnap": "^1.1.0",
     "ramda": "^0.24.1",
     "shelljs": "^0.7.8",
