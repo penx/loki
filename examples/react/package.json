@@ -6,7 +6,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-motion": "^0.5.2",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,7 +18,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "update-loki": "LOKI_FILE=`cd ../.. && echo \\`pwd\\`/\\`npm pack\\`` && npm install $LOKI_FILE --no-save && rm $LOKI_FILE"
+    "update-loki": "LOKI_FILE=`cd ../.. && echo \\`pwd\\`/\\`npm pack\\`` && npm install $LOKI_FILE --no-save && rm $LOKI_FILE",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "@storybook/cli": "^3.1.6",
@@ -37,5 +40,6 @@
         "preset": "iPhone 7"
       }
     }
-  }
+  },
+  "snyk": true
 }
